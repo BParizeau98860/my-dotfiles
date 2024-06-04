@@ -132,6 +132,8 @@ function myip() {
 	ifconfig en1 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en1 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
 }
 
+export $(grep -v '^#' /Users/zenika/Documents/.env | xargs -0)
+
 #
 ## new functions
 #
