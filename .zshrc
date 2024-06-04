@@ -132,6 +132,8 @@ function myip() {
 	ifconfig en1 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en1 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
 }
 
+EXPORT MY_BEAUTIFUL_PASSWORD="J_4ime_l3s_c3nards"
+
 #
 ## new functions
 #
